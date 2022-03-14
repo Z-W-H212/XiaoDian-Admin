@@ -1,0 +1,75 @@
+.headerContainer {
+  height: unset !important;
+  padding: 8px 16px 0px;
+  background-color: #fff;
+  :global {
+    .ant-tabs-nav {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.mainContainer {
+  padding: 16px;
+}
+
+.folderContainer {
+  padding: 16px;
+  background-color: #fff;
+}
+
+:global {
+  .ant-tree-indent-unit {
+    width: 20px !important;
+  }
+}
+
+.folderItem {
+  display: flex;
+  margin-left: 3px;
+  justify-content: space-between;
+  &:hover {
+    .folderDropmenuIcon {
+      opacity: 1;
+    }
+  }
+}
+
+.folderDropmenu {
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding-left: 3px;
+}
+
+.folderDropmenuIcon {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.reportTableTinyCell {
+  line-height: 1.2;
+  font-size: 12px;
+  > b {
+    display: block;
+    font-weight: normal;
+  }
+}
+
+:global .ant-tree-node-content-wrapper {
+  display: flex;
+}
+:global .ant-tree-title {
+  width: 100%;
+}
+
+.split-row-select-active {
+  background-color: #e6f7ff;
+  > :global(td) {
+    background-color: #e6f7ff !important;
+  }
+}
+
+.anchorIcon {
+  color: #1890ff
+}

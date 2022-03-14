@@ -1,0 +1,73 @@
+.folderItem {
+  display: flex;
+  margin-left: 3px;
+  justify-content: space-between;
+  &:hover {
+    .folderDropmenuIcon {
+      opacity: 1;
+    }
+  }
+}
+
+.folderDropmenu {
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding-left: 3px;
+}
+
+.folderDropmenuIcon {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.reportTableTinyCell {
+  line-height: 1.2;
+  font-size: 12px;
+  > b {
+    display: block;
+    font-weight: normal;
+  }
+}
+
+:global .ant-tree-node-content-wrapper {
+  display: flex;
+}
+:global .ant-tree-title {
+  width: 100%;
+}
+.folderContainer {
+  background-color: #fff;
+}
+.groupHeader {
+  width: 100%;
+  background-color: #fafafa;
+  box-shadow: 0 -1px 0 #0000001f inset;
+  box-sizing: border-box;
+  padding: 16px 8px;
+}
+.groupBody {
+  // height: 90vh;
+  padding: 16px 8px;
+  // &::-webkit-scrollbar {
+  //   width: 6px;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background: rgb(206, 206, 206);
+  //   border-radius: 10px;
+  // }
+  // &::-webkit-scrollbar-track-piece {
+  //   background: transparent;
+  // }
+}
+
+.subTitle {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #8c8c8c;
+}
+
+.nothing {
+  color: #8c8c8c;
+  padding: 8px 8px 0 8px;
+}

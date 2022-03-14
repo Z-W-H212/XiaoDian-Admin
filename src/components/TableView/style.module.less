@@ -1,0 +1,43 @@
+// .table {
+  // :global(.ant-table-row td) {
+  //   background: #fff;
+  //   word-break: break-all;
+  // }
+
+  // :global(.react-resizable) {
+  //   position: relative;
+  //   background-clip: padding-box;
+  // }
+
+  // :global(.react-resizable-handle) {
+  //   position: absolute;
+  //   width: 10px;
+  //   height: 100%;
+  //   bottom: 0;
+  //   right: -5px;
+  //   cursor: col-resize;
+  //   z-index: 1;
+  // }
+
+// }
+
+.tableWrapper {
+  :global {
+    .react-resizable {
+      position: relative;
+    }
+
+    .react-resizable-handle {
+      position: absolute;
+      width: 10px;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+      cursor: col-resize;
+    }
+    // .ant-table-row td {
+    //   background: #fff;
+    //   word-break: break-all;
+    // }
+  }
+}

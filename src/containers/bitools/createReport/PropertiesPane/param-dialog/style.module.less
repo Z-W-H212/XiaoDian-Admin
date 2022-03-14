@@ -1,0 +1,52 @@
+.dialog {
+  width: 900px !important;
+}
+
+.sider {
+  width: 220px;
+  min-width: 220px;
+  background: #fafafc;
+}
+
+.add {
+  padding: 8px;
+}
+
+.button {
+  width: 100%;
+}
+
+.menu {
+  height: 300px;
+  overflow: auto;
+  padding-top: 30px;
+  box-shadow: 0 8px 20px #9a9a9a;
+  background-color: #fff;
+}
+.input {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.addParams {
+  display: block;
+  padding-left: 16px;
+  height: 40px;
+  width: 220px;
+  line-height: 40px;
+  position: absolute;
+  border-top: 1px solid #f0f0f0;
+  bottom: -40px;
+  background: rgb(250, 250, 252);
+}
+.menuItem {
+  :global(span.ant-menu-title-content) {
+    display: block;
+    > :global(span) {
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

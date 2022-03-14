@@ -1,0 +1,106 @@
+.folderItem {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3px;
+  &:hover {
+    .folderDropmenuIcon {
+      opacity: 1;
+    }
+  }
+}
+
+.folderDropmenu {
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding-left: 3px;
+}
+
+.folderDropmenuIcon {
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.reportTableTinyCell {
+  line-height: 1.2;
+  font-size: 12px;
+  > b {
+    display: block;
+    font-weight: normal;
+  }
+}
+
+:global .ant-tree-node-content-wrapper {
+  display: flex;
+}
+:global .ant-tree-title {
+  width: 100%;
+}
+
+.groupHeader {
+  width: 100%;
+  padding: 16px 8px;
+  box-shadow: 0 -1px 0 #0000001f inset;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.groupBody {
+  height:90vh;
+  padding: 16px 8px;
+  overflow-y: auto;
+}
+
+:global {
+  .ant-drawer-body {
+    padding: 0;
+  }
+}
+
+.SideHeader {
+  width: 100%;
+  padding-left: 10px;
+  margin: 10px 0 -5px 0;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+.reportGroupName, .reportDBName {
+  span {
+    margin-left: 6px;
+    text-decoration: underline;
+    color: #999999;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span:first-child {
+    margin-left: 0;
+    text-decoration: 0;    
+    &:hover {
+      cursor: auto;
+    }
+  }
+}
+
+
+.reportDBName {
+  span {
+    text-decoration: 0;
+  }
+  .outline {
+    text-decoration: line-through !important;
+  }
+}
+
+.appSelectedWrap {
+  padding: 8px;
+}
+.appSelectInput {
+  width: 140px;
+}
+
+.configCustom {
+  display: flex;
+  justify-content: space-between;
+}

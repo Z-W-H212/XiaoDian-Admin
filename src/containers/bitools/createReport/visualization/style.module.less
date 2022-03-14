@@ -1,0 +1,120 @@
+.layout {
+  display: flex;
+  flex: 1;
+  margin-top: 12px;
+  .layout-content {
+    background: #fff;
+    padding: 8px;
+  }
+}
+
+.field-list {
+  list-style: none;
+  padding-right: 12px;
+  padding-left: 0;
+  height: 80vh;
+  overflow-y: auto;
+}
+.field-list-item {
+  font-weight: 400;
+    line-height: 1.5715;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-color: #d9d9d9;
+    border-radius: 2px;
+    background: #ffffff;
+    padding: 6px 15px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .02);
+    color: rgba(0, 0, 0, 0.65);
+    transition: all 0.3s;
+}
+
+.target {
+  position: relative;
+  font-weight: 400;
+  line-height: 1.5715;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-color: #d9d9d9;
+  border-radius: 2px;
+  background: #ffffff;
+  padding: 6px 15px;
+  margin: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  color: rgba(0, 0, 0, 0.65);
+  transition: all 0.3s;
+}
+
+.targetWrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.title {
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.close {
+  margin-left: 8px;
+  color: #8A94A6;
+  font-weight: normal;
+  cursor: pointer;
+}
+.drill-chosen {
+  :global(.iconzuanqu-) {
+    display: none;
+  }
+}
+
+.container {
+  display: flex;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #FAFAFA;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 4px;
+    border: 1px dashed #eee;
+    flex: 1;
+    margin-bottom: 0;
+    min-height: 54px;
+  }
+  .label {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
+.drill-container {
+  display: flex;
+  flex: 1;
+  border: 1px dashed #eee;
+  align-items: start;
+  > li {
+    margin: 8px;
+    margin-right: 2px;
+  }
+  > ul {
+    border: none;
+    > li {
+      margin-left: 20px;
+      .drill-icon {
+        position: absolute;
+        left: -20px;
+      }
+    }
+  }
+}
+.ghost {
+  opacity: .3;
+  background-color: #38abff;
+}
+.icon {
+  color: #3F5DFF;
+}
